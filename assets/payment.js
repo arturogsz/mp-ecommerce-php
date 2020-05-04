@@ -1,4 +1,4 @@
-function connect() {
+$('#the-button').on('click', function() {
   $.ajax({
     url: window.location.host + 'checkout.php',
     type: 'POST',
@@ -14,4 +14,4 @@ function connect() {
       alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
     }
   });
-}
+});

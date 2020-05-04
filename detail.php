@@ -14,6 +14,9 @@
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"></script>
 
+    <script src="./assets/payment.js"></script>
+
+
     <link rel="stylesheet" href="./assets/category-landing.css" media="screen, print">
 
     <link rel="stylesheet" href="./assets/category.css" media="screen, print">
@@ -114,13 +117,11 @@
 																			<h3 ><?php echo $_POST['price'] ?></h3>
 																			<h3 ><?php echo "$" . $_POST['unit'] ?></h3>
 																	</div>
-																	<form action="/checkout.php" method="post">
 																		<input type="hidden" name="img" value="<?php echo $_POST['img'] ?>">
 																		<input type="hidden" name="title" value="<?php echo $_POST['title'] ?>">
 																		<input type="hidden" name="price" value="<?php echo $_POST['price'] ?>">
 																		<input type="hidden" name="unit" value="<?php echo $_POST['unit'] ?>">
-																		<button type="submit" class="mercadopago-button" formmethod="post">Pagar</button>
-																	</form>
+																		<button id="the-button" class="mercadopago-button" formmethod="post">Pagar</button>
 															</div>
 													</div>
 											</div>
