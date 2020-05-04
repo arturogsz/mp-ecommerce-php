@@ -2,7 +2,7 @@ $(document).ready(function() {
   console.log('button pressed');
   $('#the-button').on('click', function() {
     $.ajax({
-      url: window.location.host + 'checkout.php',
+      url: window.location.host + '/checkout.php',
       type: 'POST',
       dataType: 'json',
       success: function(json) {
